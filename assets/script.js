@@ -8,13 +8,11 @@ function generatePassword() {
   var lengthSelect = prompt("How long would you like your password to be? (Between 8 and 128 characters.)", 8);
   // If user clicks "Cancel", reset
   if (lengthSelect === null) {
-    alert("Please choose your password length.")
-    return;
+    return "Please choose your password length.\nClick the button again.";
   }
   // If user enters incorrect value, reset
   while (lengthSelect <=7 || lengthSelect >=129) {
-    alert("Your password must contain between 8 and 128 characters.");
-    return;
+    return "Your password must contain between 8 and 128 characters.\nPlease click the button again.";
   }
   // User character-type prompts
   var lowerSelect = confirm("Would you like your password to include lowercase letters");
@@ -23,8 +21,7 @@ function generatePassword() {
   var symbolSelect = confirm("Would you like symbols in there?");
   // If user clicks "Cancel" on all character-type options, reset
   while (lowerSelect === false && upperSelect === false && numberSelect === false && symbolSelect === false) {
-  alert("You must select at least one type of character to include in your password.");
-    return;
+    return "You must select at least one type of character to include in your password.\nPlease click the button again.";
   }
 
   var characterSet = "";
