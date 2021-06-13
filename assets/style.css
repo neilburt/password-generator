@@ -13,8 +13,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: "Consolas", monospace;
+  background-color: #3b3b3b;
 }
 
 .wrapper {
@@ -27,31 +27,38 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #cccccc;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #242424;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  box-shadow: #747474 0px 2px 8px 0px;
+  color: #cccccc;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
+.card-header {
+  text-align: center;
+}
+
 .card-header::after {
   content: " ";
   display: block;
+  text-align: center;
   width: 100%;
-  background: #e7e9eb;
+  background: #242424;
   height: 2px;
 }
 
 .card-body {
   min-height: 100px;
+  background-color: #242424;
+  color: #49b7da
 }
 
 .card-footer {
@@ -62,7 +69,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #242424;
   height: 2px;
 }
 
@@ -74,13 +81,14 @@ header {
 
 .btn {
   border: none;
-  background-color: rgb(52, 62, 211);
+  background-color: #396ec7;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+  box-shadow: #cccccc 0px 1px 6px 0px #cccccc 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #cccccc;
   display: inline-block;
   font-size: 22px;
+  font-family: "Consolas", monospace;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
@@ -90,11 +98,19 @@ header {
 
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: #242424;
 }
 
 .float-right {
   float: right;
+}
+
+textarea {
+  background-color: #242424;
+}
+
+textarea::placeholder {
+  color: #49b7da;
 }
 
 #password {
@@ -109,10 +125,12 @@ button[disabled] {
   padding-right: 15px;
   padding-bottom: 85px;
   font-size: 1.2rem;
+  font-family: "Consolas", monospace;
+  color: #49b7da;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #505050;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -127,6 +145,7 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+    font-family: "Consolas", monospace;
   }
 }
 
