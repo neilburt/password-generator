@@ -1,7 +1,7 @@
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "0123456789";
-// Utilize escape to allow backslash in symbol string
+// Utilize escape character to allow backslash in symbol string
 var symbol = "`~!@#$%^()-_+[{]}\\:',./?";
 var generateBtn = document.querySelector("#generate");
 
